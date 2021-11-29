@@ -36,7 +36,7 @@ var check = function(pwd){
 
 	if(errCode) {
 		//返回错误信息
-		return -1, errMsg;
+		return -1, '网络故障, 错误代码: ' + errCode;
 	}
 	var count = 0;
 	//检测异常文本: "The hash prefix was not in a valid format"
